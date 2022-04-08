@@ -78,3 +78,12 @@
 .productInfoContainer button {
   margin: 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .productImageContainer {
+    width: 180px;
+  }
+  .productInfoContainer {
+    max-width: 140px;
+  }
+}

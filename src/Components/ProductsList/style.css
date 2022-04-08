@@ -14,8 +14,14 @@
   background-color: #27ae60;
 }
 
-@media screen and (min-width: 480px) {
-  /* .ProductsList::-webkit-scrollbar {
-    display: none;
-  } */
+@media screen and (min-width: 1024px) {
+  .ProductsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    height: fit-content;
+    flex-wrap: wrap;
+    width: 588px;
+  }
 }

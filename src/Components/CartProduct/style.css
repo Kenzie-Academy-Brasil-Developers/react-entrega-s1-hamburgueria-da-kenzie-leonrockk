@@ -88,3 +88,15 @@
 .removeButton {
   margin: 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .cartProduct {
+    height: 60px;
+  }
+  .productCartInfoContainer {
+    line-height: initial;
+  }
+  .productCartInfoContainer h2 {
+    text-align: initial;
+  }
+}
