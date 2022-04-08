@@ -1,16 +1,35 @@
 import "./style.css";
 import { useState } from "react";
 
-export default function Header({ logo, setProducts, api, setResults, search, setSearch }) {
+export default function Header({
+  logo,
+  setProducts,
+  api,
+  setResults,
+  search,
+  setSearch,
+}) {
   function filterSearch(param) {
+    const lowerCaseParam = param.toLowerCase();
+
     if (param === "") {
       setResults("false");
       setProducts([...api]);
     } else {
       setResults("true");
+
       const filtered = api.filter((item) => {
-        return item.name.toLowerCase().includes(param.toLowerCase());
+        const nameFilter = item.name.toLowerCase();
+        const categoryFilter = item.category.toLowerCase();
+
+        if (nameFilter.includes(lowerCaseParam)) {
+          return nameFilter.includes(lowerCaseParam);
+        }
+        if (categoryFilter.includes(lowerCaseParam)) {
+          return categoryFilter.includes(lowerCaseParam);
+        }
       });
+
       setProducts([...filtered]);
     }
   }
