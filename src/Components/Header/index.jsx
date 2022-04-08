@@ -37,15 +37,17 @@ export default function Header({
     <header className="App-header">
       <img src={logo}></img>
       <div className="searchContainer">
-        <input
-          onChange={(e) => {
-            setSearch(e.target.value);
-            filterSearch(e.target.value);
-          }}
-          type={"search"}
-          placeholder={"Digitar Pesquisa"}
-        />
-        <button onClick={() => filterSearch(search)}>Pesquisar</button>
+        <form>
+          <input
+            onChange={(e) => {
+              setSearch(e.target.value);
+              filterSearch(e.target.value);
+            }}
+            type={"search"}
+            placeholder={"Digitar Pesquisa"}
+          />
+          <button onClick={() => filterSearch(search)}>Pesquisar</button>
+        </form>
       </div>
     </header>
   );
