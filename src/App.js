@@ -46,7 +46,10 @@ function App() {
           </div>
           <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} />
           <div className="lineBreak"></div>
-          <CartTotal currentSale={currentSale} />
+          <CartTotal
+            currentSale={currentSale}
+            setCurrentSale={setCurrentSale}
+          />
         </div>
       </main>
     </div>
