@@ -1,0 +1,21 @@
+.ProductsList {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  margin: 0 0 0 10px;
+  height: 285px;
+}
+
+.ProductsList::-webkit-scrollbar {
+  height: 5px;
+}
+
+.ProductsList::-webkit-scrollbar-thumb {
+  background-color: #27ae60;
+}
+
+@media screen and (min-width: 480px) {
+  /* .ProductsList::-webkit-scrollbar {
+    display: none;
+  } */
+}
