@@ -89,3 +89,22 @@
     right: 84px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .App-header {
+    height: 80px;
+  }
+  .App-header img {
+    position: fixed;
+    left: 293px;
+    top: 28px;
+  }
+  .App-header input {
+    width: 365px;
+    left: 830px;
+    top: 10px;
+  }
+  .App-header button {
+    top: 18px;
+    right: 307px;
+  }
+}
