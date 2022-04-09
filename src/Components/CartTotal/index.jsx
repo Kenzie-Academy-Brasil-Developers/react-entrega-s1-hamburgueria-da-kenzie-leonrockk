@@ -13,7 +13,9 @@ export default function CartTotal({ currentSale, setCurrentSale }) {
         <h5>Total</h5>
         <h5>R${finalPrice.toFixed(2).replace(".", ",")}</h5>
       </div>
-      <button onClick={removeAll}>Remover todos</button>
+      {currentSale.length > 0 ? (
+        <button onClick={removeAll}>Remover todos</button>
+      ) : null}
     </div>
   );
 }
